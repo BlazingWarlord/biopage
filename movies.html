@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Shelf – Anirudh Ramesh</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet" />
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #111;
+      color: #ddd;
+      font-family: 'Fira Code', monospace;
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem;
+    }
+
+    h1 {
+      margin-bottom: 0.5rem;
+      color: #4fc3f7;
+    }
+
+    .section-title {
+      font-size: 1.3rem;
+      margin: 2rem 0 1rem 2rem;
+      color: #ccc;
+    }
+
+    .shelf {
+      display: flex;
+      gap: 1rem;
+      padding: 0 2rem;
+      overflow-x: auto;
+      scrollbar-color: #333 #111;
+    }
+
+    .poster {
+      flex: 0 0 auto;
+      width: 150px;
+      height: 225px;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .poster:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 16px rgba(255, 255, 255, 0.2);
+    }
+
+    .poster img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 3rem;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Shelf</h1>
+    <p>My favorite movies and shows</p>
+  </header>
+
+  <div class="section-title">🎬 Movies</div>
+  <div class="shelf">
+    <div class="poster"><img src="https://media.themoviedb.org/t/p/w300_and_h450_bestv2/j0iPLV1DZb03SwubhRSI5ztP3lZ.jpg" alt="Toy Story" /></div>
+    <div class="poster"><img src="https://media.themoviedb.org/t/p/w300_and_h450_bestv2/6FfCtAuVAW8XJjZ7eWeLibRLWTw.jpg" alt="Star Wars" /></div>
+    <div class="poster"><img src="https://media.themoviedb.org/t/p/w300_and_h450_bestv2/63viWuPfYQjRYLSZSZNq7dglJP5.jpg" alt="Jurassic Park" /></div>
+    <div class="poster"><img src="https://media.themoviedb.org/t/p/w600_and_h900_bestv2/ulzhLuWrPK07P1YkdWQLZnQh1JL.jpg" alt="Avengers: Endgame" /></div>
+    <div class="poster"><img src="https://media.themoviedb.org/t/p/w300_and_h450_bestv2/vN5B5WgYscRGcQpVhHl6p9DDTP0.jpg" alt="Back to the Future" /></div>
+    <div class="poster"><img src="https://media.themoviedb.org/t/p/w600_and_h900_bestv2/e2uVtH6TpMfUl7WeOM70ezkcjsU.jpg" alt="You've Got Mail" /></div>
+    <div class="poster"><img src="https://media.themoviedb.org/t/p/w300_and_h450_bestv2/xUuHj3CgmZQ9P2cMaqQs4J0d4Zc.jpg" alt="Top Gun" /></div>
+    <div class="poster"><img src="https://media.themoviedb.org/t/p/w300_and_h450_bestv2/4GIeI5K5YdDUkR3mNQBoScpSFEf.jpg" alt="Real Steel" /></div>
+    <div class="poster"><img src="https://media.themoviedb.org/t/p/w300_and_h450_bestv2/n0ybibhJtQ5icDqTp8eRytcIHJx.jpg" alt="The Social Network" /></div>
+  </div>
+
+  <div class="section-title">📺 TV Shows</div>
+  <div class="shelf">
+    <div class="poster"><img src="https://media.themoviedb.org/t/p/w300_and_h450_bestv2/2koX1xLkpTQM4IZebYvKysFW1Nh.jpg" alt="Show 1" /></div>
+    <div class="poster"><img src="https://media.themoviedb.org/t/p/w300_and_h450_bestv2/ooBGRQBdbGzBxAVfExiO8r7kloA.jpg" alt="Show 2" /></div>
+    <div class="poster"><img src="https://media.themoviedb.org/t/p/w300_and_h450_bestv2/k5Qg5rgPoKdh3yTJJrLtyoyYGwC.jpg" alt="Show 3" /></div>
+    <div class="poster"><img src="https://media.themoviedb.org/t/p/w300_and_h450_bestv2/wk81zTtu5yNM6ohgMpVrNvzJp3B.jpg" alt="Show 4" /></div>
+    <div class="poster"><img src="https://media.themoviedb.org/t/p/w300_and_h450_bestv2/cIfGAkpvWD2zxHrXzhv3uptYbyV.jpg" alt="Show 5" /></div>
+    <div class="poster"><img src="https://media.themoviedb.org/t/p/w300_and_h450_bestv2/hgRMSOt7a1b8qyQR68vUixJPang.jpg" alt="Show 6" /></div>
+    <div class="poster"><img src="https://media.themoviedb.org/t/p/w300_and_h450_bestv2/qIhsuhoIYR5yTnDta0IL4senbeN.jpg" alt="Show 7" /></div>
+    <div class="poster"><img src="https://media.themoviedb.org/t/p/w300_and_h450_bestv2/gwtzCwU2wdLLf8oejQu2TINiWfQ.jpg" alt="Show 8" /></div>
+  </div>
+
+  <footer>
+    <p>© 2025 Anirudh Ramesh</p>
+  </footer>
+</body>
+</html>

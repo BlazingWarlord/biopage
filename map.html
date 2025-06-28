@@ -124,12 +124,52 @@
       }).addTo(map);
 
       const locations = [
-        { lat: 12.9716, lon: 77.5946, name: "Bangalore, India" },
-        { lat: 37.7749, lon: -122.4194, name: "San Francisco, USA" },
-        { lat: 51.5074, lon: -0.1278, name: "London, UK" },
-        { lat: 43.6532, lon: -79.3832, name: "Toronto, Canada" },
-        { lat: 25.2048, lon: 55.2708, name: "Dubai, UAE" }
-      ];
+  // India
+  { lat: 12.9716, lon: 77.5946, name: "Bangalore, India" },
+  { lat: 13.0827, lon: 80.2707, name: "Chennai, India" },
+  { lat: 17.3850, lon: 78.4867, name: "Hyderabad, India" },
+  { lat: 9.9312, lon: 76.2673, name: "Cochin, India" },
+  { lat: 11.4100, lon: 76.6950, name: "Ooty, India" },
+  { lat: 10.2381, lon: 77.4892, name: "Kodaikanal, India" },
+  { lat: 11.9497, lon: 76.3232, name: "Kabini, India" },
+
+  // Japan
+  { lat: 35.6762, lon: 139.6503, name: "Tokyo, Japan" },
+  { lat: 35.0116, lon: 135.7681, name: "Kyoto, Japan" },
+  { lat: 34.6937, lon: 135.5023, name: "Osaka, Japan" },
+
+  // Southeast Asia
+  { lat: 1.3521, lon: 103.8198, name: "Singapore" },
+  { lat: 3.1390, lon: 101.6869, name: "Kuala Lumpur, Malaysia" },
+  { lat: 6.3500, lon: 99.8000, name: "Langkawi, Malaysia" },
+  { lat: 13.7563, lon: 100.5018, name: "Bangkok, Thailand" },
+  { lat: 12.9236, lon: 100.8825, name: "Pattaya, Thailand" },
+
+  // USA
+  { lat: 37.7749, lon: -122.4194, name: "San Francisco, USA" },
+  { lat: 40.7128, lon: -74.0060, name: "New York, USA" },
+  { lat: 40.0583, lon: -74.4057, name: "New Jersey, USA" },
+  { lat: 29.7604, lon: -95.3698, name: "Houston, USA" },
+  { lat: 28.5383, lon: -81.3792, name: "Orlando, USA" },
+
+  // Europe
+  { lat: 51.5074, lon: -0.1278, name: "London, UK" },
+  { lat: 48.8566, lon: 2.3522, name: "Paris, France" },
+  { lat: 47.0502, lon: 8.3093, name: "Lucerne, Switzerland" },
+  { lat: 45.4408, lon: 12.3155, name: "Venice, Italy" },
+  { lat: 43.7696, lon: 11.2558, name: "Florence, Italy" },
+  { lat: 41.9028, lon: 12.4964, name: "Rome, Italy" },
+
+  // Middle East
+  { lat: 25.2048, lon: 55.2708, name: "Dubai, UAE" },
+
+  // Nepal
+  { lat: 27.7172, lon: 85.3240, name: "Kathmandu, Nepal" },
+  { lat: 27.5291, lon: 84.3542, name: "Chitwan, Nepal" },
+  { lat: 28.2096, lon: 83.9856, name: "Pokhara, Nepal" },
+
+];
+
 
       locations.forEach(loc => {
         L.marker([loc.lat, loc.lon], {

@@ -22,13 +22,13 @@
     }
 
     header h1 {
-      font-size: 2rem;
+      font-size: 2.2rem;
       margin-bottom: 0.3rem;
     }
 
     header p {
       color: #888;
-      font-size: 0.95rem;
+      font-size: 1rem;
     }
 
     nav.nav-bar {
@@ -40,12 +40,14 @@
       color: #4fc3f7;
       text-decoration: none;
       margin: 0 1rem;
+      font-size: 1rem;
     }
 
     main {
-      max-width: 900px;
+      max-width: 960px;
       margin: auto;
-      padding: 2rem;
+      padding: 2rem 1.5rem;
+      line-height: 1.7;
     }
 
     section {
@@ -55,33 +57,40 @@
     h2 {
       color: #4fc3f7;
       border-bottom: 1px solid #333;
-      padding-bottom: 0.3rem;
-      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1.5rem;
+      font-size: 1.3rem;
     }
 
     h3 {
-      margin: 0;
+      margin: 0 0 0.3rem 0;
       font-size: 1.05rem;
     }
 
     .date {
       font-size: 0.85rem;
       color: #888;
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.75rem;
     }
 
     p {
-      margin: 0.4rem 0 1rem 0;
-      line-height: 1.6;
+      margin: 0 0 1rem 0;
     }
 
     ul {
       padding-left: 1.2rem;
+      margin-top: 0.5rem;
+    }
+
+    ul li {
+      margin-bottom: 0.6rem;
     }
 
     footer {
       font-size: 0.85rem;
       color: #666;
+      border-top: 1px solid #222;
+      padding-top: 1.5rem;
     }
 
     a {
@@ -92,7 +101,7 @@
 <body>
   <header>
     <h1>Anirudh Ramesh</h1>
-    <p>"Creative Developer, Thinker"</p>
+    <p>"BITSian 21'-25', Software Developer"</p>
   </header>
 
   <nav class="nav-bar">
@@ -105,6 +114,7 @@
   </nav>
 
   <main>
+
     <section>
       <h2>Contact</h2>
       <p><strong>Email:</strong> 111103anirudh@gmail.com</p>
@@ -124,41 +134,45 @@
     <section>
       <h2>Experience</h2>
 
-      <h3>SDE Intern, Telus International, Bangalore</h3>
-      <p class="date">June 2024 – Dec 2024</p>
-      <p>
-        Working as a SDE Intern on developing and fixing a Dash-Board for a major client.
-        Also worked on a major full-stack internal-usage User Management Tool.  
-        <br />
-        <strong>Technologies:</strong> Retool, JavaScript, APIs, Postman
-      </p>
+      <div>
+        <h3>SDE Intern, Telus International, Bangalore</h3>
+        <p class="date">June 2024 – Dec 2024</p>
+        <p>Worked on internal dashboards and user management utilities for a major client.</p><br>
+        <p><strong>Technologies:</strong> Retool, JavaScript, APIs, Postman</p>
+      </div>
 
-      <h3>Summer Intern, UST Global, Chennai</h3>
-      <p class="date">June 2023 – July 2023</p>
-      <p>
-        Worked on an application to automate migration to a cloud service provider (Azure).
-        Developed a system to remotely analyze the server and suggest equivalent services.  
-        <br />
-        <strong>Technologies:</strong> Python, Microsoft Azure
-      </p>
+      <div>
+        <h3>Summer Intern, UST Global, Chennai</h3>
+        <p class="date">June 2023 – July 2023</p>
+        <p>Automated cloud migration tools and server analysis systems for Azure.</p><br>
+        <p><strong>Technologies:</strong> Python, Microsoft Azure</p>
+      </div>
 
-      <h3>Teaching Assistant, BITS Pilani – Artificial Intelligence</h3>
-      <p class="date">Jan 2025 – May 2025</p>
-      <p>Helped in development of assignments using Python and OpenAI API.</p>
+      <div>
+        <h3>Teaching Assistant – Artificial Intelligence</h3>
+        <p class="date">Jan 2025 – May 2025</p>
+        <p>Helped with assignment design using Python and OpenAI API.</p>
+      </div>
 
-      <h3>Teaching Assistant, BITS Pilani – EEC Lab</h3>
-      <p class="date">Jan 2024 – May 2024</p>
-      <p>Developed lab assignments for Signals and Systems simulations using Python.</p>
+      <div>
+        <h3>Teaching Assistant – Electrical and Electronic Circuits Laboratory</h3>
+        <p class="date">Jan 2024 – May 2024</p>
+        <p>Designed simulations for Signals and Systems using Python.</p>
+      </div>
     </section>
 
     <section>
       <h2>Projects</h2>
 
-      <h3>AI Chatbot Web App</h3>
-      <p>Created a chatbot with OpenAI, Flask backend, credits system, and OAuth login.</p>
+      <div>
+        <h3>AI Chatbot Web App</h3>
+        <p>Chatbot using OpenAI API, Flask backend, credit system, and OAuth login.</p>
+      </div>
 
-      <h3>Cricket YouTube Series</h3>
-      <p>Produced and edited cricket video game shorts. Focused on branding and content strategy.</p>
+      <div>
+        <h3>Cricket YouTube Series</h3>
+        <p>Produced and edited short-format cricket gameplay videos with a strategic content pipeline.</p>
+      </div>
     </section>
 
     <section>
@@ -174,14 +188,14 @@
       <h2>Achievements</h2>
       <ul>
         <li>
-          <strong>"What? to What! - Your Pathway to Python Proficiency"</strong><br />
-          Self-published book for beginner Python learners (Kindle & paperback)
+          <strong>What? to What! - Your Pathway to Python Proficiency</strong><br>
+          Authored a beginner-focused Python book; self-published via Kindle, Notionpress.
         </li>
         <li>
-          <strong>ThePygrammer:</strong> Blog reached 29K+ views for project and tutorial content
+          <strong>ThePygrammer:</strong><br> Educational blog with 29K+ views on beginner-friendly projects.
         </li>
         <li>
-          <strong>Brackeys' Game Jam:</strong> Built and submitted a game in 7 days, hosted on itch.io
+          <strong>Brackeys' Game Jam:</strong><br> Built a game in 7 days for a global game jam, hosted on itch.io.
         </li>
       </ul>
     </section>
@@ -194,6 +208,7 @@
         <li>Game Development</li>
       </ul>
     </section>
+    
   </main>
 
   <footer>
